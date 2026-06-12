@@ -189,3 +189,13 @@ If webcam detection opens a black window, try another camera index:
 PYTHONPATH=src python -m tfod2_demo detect-webcam --camera 1
 ```
 
+## Results
+
+### Detection Result 1
+![Result 1](screenshots/screenshot1.png)
+
+### Detection Result 2
+![Result 2](screenshots/screenshot2.png)
+
+### Detection Result 3
+![Result 3](screenshots/screenshot3.png)
