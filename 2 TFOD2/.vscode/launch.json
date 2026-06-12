@@ -1,0 +1,49 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "TFOD2: Setup Model",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "tfod2_demo",
+      "args": ["setup-model"],
+      "env": {
+        "PYTHONPATH": "${workspaceFolder}/src"
+      },
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "TFOD2: Detect Image",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "tfod2_demo",
+      "args": ["detect-image", "--image", "sample_images/test.jpg"],
+      "env": {
+        "PYTHONPATH": "${workspaceFolder}/src"
+      },
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "TFOD2: Detect Batch",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "tfod2_demo",
+      "args": ["detect-batch"],
+      "env": {
+        "PYTHONPATH": "${workspaceFolder}/src"
+      },
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "TFOD2: Detect Webcam",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "tfod2_demo",
+      "args": ["detect-webcam", "--camera", "0"],
+      "env": {
+        "PYTHONPATH": "${workspaceFolder}/src"
+      },
+      "console": "integratedTerminal"
+    }
+  ]
+}

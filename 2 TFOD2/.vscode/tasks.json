@@ -1,0 +1,51 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Create virtual environment",
+      "type": "shell",
+      "command": "python3 -m venv .venv",
+      "problemMatcher": []
+    },
+    {
+      "label": "Install dependencies",
+      "type": "shell",
+      "command": "${workspaceFolder}/.venv/bin/python -m pip install --upgrade pip && ${workspaceFolder}/.venv/bin/python -m pip install -r requirements.txt",
+      "problemMatcher": []
+    },
+    {
+      "label": "Download default TFOD2 model",
+      "type": "shell",
+      "command": "${workspaceFolder}/.venv/bin/python -m tfod2_demo setup-model",
+      "options": {
+        "env": {
+          "PYTHONPATH": "${workspaceFolder}/src"
+        }
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Run image detection",
+      "type": "shell",
+      "command": "${workspaceFolder}/.venv/bin/python -m tfod2_demo detect-image --image sample_images/test.jpg",
+      "options": {
+        "env": {
+          "PYTHONPATH": "${workspaceFolder}/src"
+        }
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Run batch detection",
+      "type": "shell",
+      "command": "${workspaceFolder}/.venv/bin/python -m tfod2_demo detect-batch",
+      "options": {
+        "env": {
+          "PYTHONPATH": "${workspaceFolder}/src"
+        }
+      },
+      "problemMatcher": []
+    }
+  ]
+}
+
