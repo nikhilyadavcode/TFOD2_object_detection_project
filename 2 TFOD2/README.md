@@ -192,10 +192,13 @@ PYTHONPATH=src python -m tfod2_demo detect-webcam --camera 1
 ## Results
 
 ### Detection Result 1
-![Result 1](screenshots/screenshot1.png)
+
+![Result 1](screenshots/Screenshot%202026-06-12%20101537.png)
 
 ### Detection Result 2
-![Result 2](screenshots/screenshot2.png)
+
+![Result 2](screenshots/Screenshot%202026-06-12%20101834.png)
 
 ### Detection Result 3
-![Result 3](screenshots/screenshot3.png)
+
+![Result 3](screenshots/Screenshot%202026-06-12%20101955.png)
